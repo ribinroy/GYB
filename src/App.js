@@ -15,8 +15,8 @@ import gal3 from './assets/Images/Gallery/3.jpg';
 import gal4 from './assets/Images/Gallery/4.jpg';
 import gal5 from './assets/Images/Gallery/5.jpg';
 
-import metapurse from './assets/Images/Partners/metapurse.jpg';
-import b20 from './assets/Images/Partners/b20.jpg';
+import metapurse from './assets/Images/Partners/Metapurse.jpg';
+import b20 from './assets/Images/Partners/B20.jpg';
 import gala from './assets/Images/Partners/gala.jpg';
 import niftygateway from './assets/Images/Partners/niftygateway.jpg';
 import opensea from './assets/Images/Partners/opensea.jpg';
@@ -25,10 +25,10 @@ import nftshowroom from './assets/Images/Partners/nftshowroom.jpg';
 import terravirtua from './assets/Images/Partners/terravirtua.jpg';
 import ghostmarket from './assets/Images/Partners/ghostmarket.jpg';
 import mybae from './assets/Images/Partners/mybae.jpg';
-import avastars from './assets/Images/Partners/avastars.jpg';
-import fenwick from './assets/Images/Partners/fenwick.jpg';
+import avastars from './assets/Images/Partners/Avastars.jpg';
+import fenwick from './assets/Images/Partners/Fenwick.jpg';
 import flamingodao from './assets/Images/Partners/flamingodao.jpg';
-import sandbox from './assets/Images/Partners/sandbox.jpg';
+import sandbox from './assets/Images/Partners/Sandbox.jpg';
 import you from './assets/Images/Partners/you.jpg';
 
 //logos
