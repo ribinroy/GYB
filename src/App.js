@@ -7,7 +7,29 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 //images
 import heroBG from './assets/Images/BG.jpg';
 import beeple from './assets/Images/Beeple.jpg';
-import B20Logo from './assets/Images/B20Logo.svg';
+import B20Logo from './assets/Images/B20Logo.jpg';
+
+import gal1 from './assets/Images/Gallery/1.jpg';
+import gal2 from './assets/Images/Gallery/2.jpg';
+import gal3 from './assets/Images/Gallery/3.jpg';
+import gal4 from './assets/Images/Gallery/4.jpg';
+import gal5 from './assets/Images/Gallery/5.jpg';
+
+import metapurse from './assets/Images/Partners/metapurse.jpg';
+import b20 from './assets/Images/Partners/b20.jpg';
+import gala from './assets/Images/Partners/gala.jpg';
+import niftygateway from './assets/Images/Partners/niftygateway.jpg';
+import opensea from './assets/Images/Partners/opensea.jpg';
+import alienworlds from './assets/Images/Partners/alienworlds.jpg';
+import nftshowroom from './assets/Images/Partners/nftshowroom.jpg';
+import terravirtua from './assets/Images/Partners/terravirtua.jpg';
+import ghostmarket from './assets/Images/Partners/ghostmarket.jpg';
+import mybae from './assets/Images/Partners/mybae.jpg';
+import avastars from './assets/Images/Partners/avastars.jpg';
+import fenwick from './assets/Images/Partners/fenwick.jpg';
+import flamingodao from './assets/Images/Partners/flamingodao.jpg';
+import sandbox from './assets/Images/Partners/sandbox.jpg';
+import you from './assets/Images/Partners/you.jpg';
 
 //logos
 import { ReactComponent as Logo } from './assets/Images/Logo.svg';
@@ -19,16 +41,83 @@ import { ReactComponent as GYBT } from './assets/Images/GYB T.svg';
 
 const partners = [
     {
-        title: 'abcd',
-        image:
-            'https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/secured-attachments/message/attachments/931caf2eb2afc4d4a48cf41c5ec4b081-1616956758381/Screen%20Shot%202021-03-28%20at%2011.39.06%20AM.png?__cld_token__=exp=1616978403~hmac=fb5a1459360c52fcf440e931e5b0aeaec84a56c4ae60afd6a372e5f98846423d',
+        title: 'metapurse.fund',
+        image: metapurse,
+    },
+    {
+        title: 'b20.metapurse.fund',
+        image: b20,
+    },
+    {
+        title: 'gala.games',
+        image: gala,
+    },
+    {
+        title: 'niftygateway.com',
+        image: niftygateway,
+    },
+    {
+        title: 'opensea.io',
+        image: opensea,
+    },
+    {
+        title: 'alienworlds.io',
+        image: alienworlds,
+    },
+    {
+        title: 'terravirtua.io',
+        image: terravirtua,
+    },
+    {
+        title: 'nftshowroom.com',
+        image: nftshowroom,
+    },
+    {
+        title: 'ghostmarket.io',
+        image: ghostmarket,
+    },
+    {
+        title: 'mybae.io',
+        image: mybae,
+    },
+    {
+        title: 'avastars.io',
+        image: avastars,
+    },
+    {
+        title: 'fenwick.com',
+        image: fenwick,
+    },
+    {
+        title: 'flamingodao.xyz',
+        image: flamingodao,
+    },
+    {
+        title: 'sandbox.game',
+        image: sandbox,
     },
 ];
 
 const galleryArray = [
     {
-        title: 'Test',
-        image: '',
+        title: "Salvador Satoshi - Heaven's Fall GhostMarket",
+        image: gal1,
+    },
+    {
+        title: 'Magusz: Shattered Ghost Market',
+        image: gal2,
+    },
+    {
+        title: 'Magusz: Neon Eye Skull Ghost Market',
+        image: gal3,
+    },
+    {
+        title: 'Rotating Cubes Paul Petersen',
+        image: gal4,
+    },
+    {
+        title: 'Dancing Gold in the Vault Paul Petersen',
+        image: gal5,
     },
 ];
 function App() {
@@ -42,7 +131,7 @@ function App() {
                         <div className='main_header'>Ultimate NFT Access</div>
                         <p>Exclusive NFTs for serious collectors</p>
                         <div className='button'>START COLLECTING</div>
-                        <a href='#'>Learn More</a>
+                        <a href='http://www.google.com'>Learn More</a>
                     </div>
                 </div>
             </section>
@@ -50,7 +139,7 @@ function App() {
                 <img src={beeple} className='beeple' alt='' />
                 <div className='content_container'>
                     <div className='flex_wrap'>
-                        <img src={B20Logo} alt='' />
+                        <img src={B20Logo} className='logo' alt='' />
                         <div className='texts_wrap'>
                             <h1>Don't miss the next B.20</h1>
                             <p>
@@ -58,8 +147,10 @@ function App() {
                                 <br />
                                 Don't miss the next one!
                             </p>
-                            <a href='#'>Read about GYB and B.20 ></a>
-                            <a href='#'>
+                            <a href='http://www.google.com'>
+                                Read about GYB and B.20 >
+                            </a>
+                            <a href='http://www.google.com'>
                                 Learn about our other notable projects
                             </a>
                         </div>
@@ -72,11 +163,17 @@ function App() {
                         <div className='text_wrap'>
                             <h1>The place to be for NFTs</h1>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Odio quis quos doloremque, sit
-                                excepturi libero reiciendis et ad nam quas vel
-                                aperiam mollitia voluptatum illum accusantium
-                                voluptates cupiditate, natus sint?
+                                Discuss NFTs, and discover new opportunities in
+                                the GYB Discord community, where thousands of
+                                NFT enthusiasts gather daily. Visit the Swifty
+                                Nifty Lounge (our Cryptovoxels headquarters),
+                                follow us on Twitter, or get an Access Pass for
+                                exclusive deals.
+                            </p>
+                            <p>
+                                We specialize in distributing one-of-a-kind
+                                assets and providing first-look opportunities on
+                                exclusive deals to our Access Pass holders.
                             </p>
                         </div>
                         <div className='communities_wrap'>
@@ -121,25 +218,27 @@ function App() {
                         <div className='content'>
                             <h1>Newbie-Friendly</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Qui odio dicta explicabo
-                                debitis quam a beatae
+                                No experience? No problem. Get information and
+                                support in the free GYB community, or a full
+                                concierge service with a paid plan.
                             </p>
                         </div>
                         <div className='content'>
-                            <h1>Newbie-Friendly</h1>
+                            <h1>Exceptional Value</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Qui odio dicta explicabo
-                                debitis quam a beatae
+                                Our partnerships with industry innovators and
+                                sought-after creators results in unique
+                                opportunities for high-value deals, and
+                                exceptional ROI.
                             </p>
                         </div>
                         <div className='content'>
-                            <h1>Newbie-Friendly</h1>
+                            <h1>Curated Opportunities</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Qui odio dicta explicabo
-                                debitis quam a beatae
+                                All paid memberships receive monthly
+                                disbursments of premium NFTs. No more wondering
+                                how to find the best deals and how to get in on
+                                them.
                             </p>
                         </div>
                     </div>
@@ -148,13 +247,18 @@ function App() {
             <section className='partners'>
                 <div className='content_container'>
                     <h1>Our World-Class Creators and Partners</h1>
-                    <div className='flex_wrap partners_items_wrap'>
+                    <div className='flex_wrap partners_items_wrap dont_adjust_sm'>
                         {partners.map((el, index) => (
                             <div className='partner' key={index}>
                                 <img src={el.image} alt={el.title} />
                                 {el.title}
                             </div>
                         ))}
+
+                        <div className='partner you' key={'you'}>
+                            <img src={you} alt={'You'} />
+                            <span>YOU!</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -162,7 +266,28 @@ function App() {
                 <div className='content_container'>
                     <p>Explore our</p>
                     <h1>PREMIUM NFT GALLERY</h1>
-                    <OwlCarousel className='owl-theme' loop margin={10} nav>
+                    <OwlCarousel
+                        className='owl-theme'
+                        loop={true}
+                        margin={20}
+                        nav={true}
+                        responsiveClass={true}
+                        responsive={{
+                            0: {
+                                items: 1,
+                                nav: true,
+                            },
+                            600: {
+                                items: 3,
+                                nav: false,
+                            },
+                            1000: {
+                                items: 5,
+                                nav: true,
+                                loop: false,
+                            },
+                        }}
+                        dotClass={'hide'}>
                         {galleryArray.map((el, index) => (
                             <div className='gallery_card' key={index}>
                                 <img src={el.image} alt='' />
@@ -170,7 +295,7 @@ function App() {
                             </div>
                         ))}
                     </OwlCarousel>
-                    <a href='#' className='button'>
+                    <a href='http://www.google.com' className='button'>
                         SHOP GALLERY
                     </a>
                 </div>
@@ -188,30 +313,42 @@ function App() {
                         <div className='details'>
                             <GYBT />
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quisquam officiis minus qui
-                                ducimus a quis, odio iste blanditiis amet sequi
-                                aut. Officiis sit doloremque cumque soluta
-                                aliquid eligendi, sequi exercitationem?
+                                GrowYourBase is the leading membership-based
+                                platform for NFT enthusiasts, investors,
+                                creators, and collectors. Community members get
+                                access to education, support, industry-first
+                                announcements, educational resources, rare
+                                collection opportunities and more.
                             </p>
                             <div className='copyright'>
-                                Lorem Ipsum is simple
+                                @2021 GrowYourBase, LLC. All rights reserved.
+                                Terms of Use. Privacy Policy.
                             </div>
                         </div>
                         <div className='links_wrap'>
-                            <a href='#' className='link_item'>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
                                 ABOUT
                             </a>
-                            <a href='#' className='link_item'>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
                                 USER FAQ
                             </a>
-                            <a href='#' className='link_item'>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
                                 NFT CREATOR FAQ
                             </a>
-                            <a href='#' className='link_item'>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
                                 CREATORS
                             </a>
-                            <a href='#' className='link_item'>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
                                 CONTACT US
                             </a>
                         </div>
@@ -242,7 +379,7 @@ const Header = () => {
     return (
         <header className={isSticked ? 'active' : ''}>
             <div className='content_container'>
-                <div className='flex_wrap flex_space_between'>
+                <div className='flex_wrap flex_space_between dont_adjust_sm'>
                     <Logo className='logo' />
                     <div className='buttons_wrap'>
                         <button>SIGN IN</button>
