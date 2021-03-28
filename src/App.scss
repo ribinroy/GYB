@@ -278,4 +278,77 @@ $header_height: 50px;
             }
         }
     }
+
+    .partners {
+        padding: 30px 0;
+        background-color: $dark_blue;
+
+        h1 {
+            color: $orange;
+            text-align: center;
+        }
+    }
+
+    .gallery {
+        background-color: $light_blue;
+        padding: 30px 0;
+        text-align: center;
+        color: $dark_blue;
+
+        h1 {
+            color: $dark_blue;
+            font-weight: 600;
+        }
+        p {
+            margin: 0;
+            margin-bottom: -40px;
+            font-weight: 600;
+        }
+
+        .button {
+            background-color: $dark_blue;
+            color: #fff;
+            text-decoration: none !important;
+            padding: 15px 40px;
+        }
+    }
+
+    .social {
+        padding: 30px 0;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        background-color: $orange;
+
+        p {
+            font-weight: 600;
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+
+    footer {
+        background-color: $dark_blue;
+        padding: 30px 0;
+        color: #fff;
+
+        .details,
+        .links_wrap {
+            width: 50%;
+        }
+
+        .links_wrap {
+            @include flex-column();
+            align-items: flex-start;
+
+            .link_item {
+                float: left;
+                color: #fff;
+                text-decoration: none !important;
+                margin-bottom: 10px;
+            }
+        }
+        .copyright {
+            font-size: 14px;
+        }
+    }
 }

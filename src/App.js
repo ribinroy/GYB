@@ -1,5 +1,8 @@
 import './App.scss';
 import { useState, useEffect } from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 //images
 import heroBG from './assets/Images/BG.jpg';
@@ -14,6 +17,20 @@ import { ReactComponent as Twitter } from './assets/Images/Twitter.svg';
 import { ReactComponent as GYB } from './assets/Images/GYB.svg';
 import { ReactComponent as GYBT } from './assets/Images/GYB T.svg';
 
+const partners = [
+    {
+        title: 'abcd',
+        image:
+            'https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/secured-attachments/message/attachments/931caf2eb2afc4d4a48cf41c5ec4b081-1616956758381/Screen%20Shot%202021-03-28%20at%2011.39.06%20AM.png?__cld_token__=exp=1616978403~hmac=fb5a1459360c52fcf440e931e5b0aeaec84a56c4ae60afd6a372e5f98846423d',
+    },
+];
+
+const galleryArray = [
+    {
+        title: 'Test',
+        image: '',
+    },
+];
 function App() {
     return (
         <div className='main_app'>
@@ -128,6 +145,79 @@ function App() {
                     </div>
                 </div>
             </section>
+            <section className='partners'>
+                <div className='content_container'>
+                    <h1>Our World-Class Creators and Partners</h1>
+                    <div className='flex_wrap partners_items_wrap'>
+                        {partners.map((el, index) => (
+                            <div className='partner' key={index}>
+                                <img src={el.image} alt={el.title} />
+                                {el.title}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <section className='gallery'>
+                <div className='content_container'>
+                    <p>Explore our</p>
+                    <h1>PREMIUM NFT GALLERY</h1>
+                    <OwlCarousel className='owl-theme' loop margin={10} nav>
+                        {galleryArray.map((el, index) => (
+                            <div className='gallery_card' key={index}>
+                                <img src={el.image} alt='' />
+                                <div className='title'>{el.title}</div>
+                            </div>
+                        ))}
+                    </OwlCarousel>
+                    <a href='#' className='button'>
+                        SHOP GALLERY
+                    </a>
+                </div>
+            </section>
+            <section className='social'>
+                <div className='content_container'>
+                    <div className='flex_wrap'>
+                        <p>JOIN THE CONVERSATION</p>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div className='content_container'>
+                    <div className='flex_wrap'>
+                        <div className='details'>
+                            <GYBT />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam officiis minus qui
+                                ducimus a quis, odio iste blanditiis amet sequi
+                                aut. Officiis sit doloremque cumque soluta
+                                aliquid eligendi, sequi exercitationem?
+                            </p>
+                            <div className='copyright'>
+                                Lorem Ipsum is simple
+                            </div>
+                        </div>
+                        <div className='links_wrap'>
+                            <a href='#' className='link_item'>
+                                ABOUT
+                            </a>
+                            <a href='#' className='link_item'>
+                                USER FAQ
+                            </a>
+                            <a href='#' className='link_item'>
+                                NFT CREATOR FAQ
+                            </a>
+                            <a href='#' className='link_item'>
+                                CREATORS
+                            </a>
+                            <a href='#' className='link_item'>
+                                CONTACT US
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 }
