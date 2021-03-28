@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import './variables.scss';
+
+$light_blue: #3ccbcf;
+$orange: #ff9300;
+$dark_blue: #00123b;
+$header_height: 50px;
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Saira Extra Condensed', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+.main_app {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 100%;
+
+    .content_container {
+        max-width: 1300px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+    }
+
+    .flex_wrap {
+        @include flex-row();
+
+        &.flex_space_between {
+            justify-content: space-between;
+        }
+
+        &.flex_column {
+            flex-direction: column;
+        }
+    }
+
+    .min_height {
+        min-height: 100vh;
+    }
+
+    .inherit {
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    h1 {
+        color: #fff;
+        @include font2();
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .no_margin {
+        margin: 0 !important;
+    }
+
+    .no_padding {
+        padding: 0 !important;
+    }
+
+    header {
+        z-index: 9999;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        width: 100%;
+        transition: background 0.4s;
+
+        &.active {
+            background-color: #fff;
+
+            button {
+                color: #000;
+            }
+        }
+
+        .logo {
+            max-height: 50px;
+        }
+        button {
+            transition: color 0.4s;
+            border-radius: 8px;
+            border-color: $light_blue !important;
+            border-width: 2px;
+            background-color: transparent;
+            color: #fff;
+            padding: 5px 20px;
+            margin: 0 5px;
+            outline: none;
+            border-style: solid !important;
+            text-align: center;
+            min-width: 100px;
+        }
+    }
+
+    .hero_message {
+        background-color: $dark_blue;
+        padding-top: $header_height;
+        color: #fff;
+        height: calc(100vh - 90px);
+
+        &:before {
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: $dark_blue;
+            z-index: 1;
+            opacity: 0.3;
+        }
+
+        .content_container {
+            z-index: 5;
+            position: relative;
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        .main_header {
+            font-size: 80px;
+            @include font2();
+            font-weight: 500;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 25px;
+            margin-top: -15px;
+        }
+
+        .button {
+            border: 1px solid $light_blue;
+            padding: 10px 50px;
+            font-size: 22px;
+            color: $light_blue;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: #fff !important;
+            margin-top: 20px;
+        }
+    }
+
+    .boast_box {
+        background-color: $dark_blue;
+        border-top: 15px solid #fff;
+        color: #fff;
+        padding-bottom: 40px;
+
+        .beeple {
+            width: 100%;
+        }
+        p {
+            opacity: 0.8;
+        }
+
+        a {
+            color: $orange;
+            text-decoration: none !important;
+            clear: both;
+            font-size: 22px;
+            width: 100%;
+            float: left;
+        }
+    }
+
+    .trust_box {
+        background-color: $light_blue;
+        padding: 40px 0;
+        border-top: 15px solid #fff;
+
+        h1,
+        p {
+            color: $dark_blue;
+        }
+
+        .text_wrap {
+            width: 50%;
+        }
+        .communities_wrap {
+            @include flex-row();
+            flex-wrap: wrap;
+            width: 50%;
+            align-items: stretch;
+
+            .item {
+                min-width: calc(50% - 20px);
+                @include flex-column();
+                border: 1px solid #fff;
+                padding: 15px;
+                min-height: 100%;
+                flex: 1;
+                margin: 10px;
+                cursor: pointer;
+                font-weight: 600;
+
+                svg {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 10px;
+                }
+
+                &.full_width {
+                    flex-direction: row;
+                    font-size: 30px;
+                    @include font2();
+                    font-weight: 500;
+
+                    svg {
+                        width: 60px;
+                        height: 60px;
+                        margin-bottom: 0;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .benefits {
+        padding: 30px 0;
+        color: $dark_blue;
+
+        .heading {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 30px;
+            text-align: center;
+
+            strong {
+                @include font2();
+                font-size: 50px;
+            }
+        }
+
+        .youtube_wrap {
+            width: 100%;
+            min-height: 600px;
+        }
+
+        .contents_wrap {
+            @include flex-row();
+            text-align: center;
+
+            .content {
+                margin: 10px;
+
+                h1 {
+                    font-size: 35px;
+                    font-weight: 600;
+                    color: $dark_blue;
+                }
+
+                p {
+                    margin: 0;
+                    margin-top: -30px;
+                }
+            }
+        }
+    }
+}
