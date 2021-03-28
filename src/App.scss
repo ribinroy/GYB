@@ -92,7 +92,7 @@ $header_height: 50px;
             background-color: #fff;
 
             button {
-                color: #000;
+                // color: #000;
             }
         }
 
@@ -114,6 +114,7 @@ $header_height: 50px;
             min-width: 100px;
             transition: all 0.4s;
             cursor: pointer;
+            background-color: $dark_blue;
 
             &:hover {
                 background-color: $light_blue !important;
