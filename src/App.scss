@@ -527,6 +527,7 @@ $header_height: 50px;
 @media only screen and (max-width: $breakpoint-xs) {
     .main_app {
         header {
+            padding: 10px 10px;
             .buttons_wrap {
                 button {
                     float: right;
