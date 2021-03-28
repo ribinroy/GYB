@@ -266,35 +266,37 @@ function App() {
                 <div className='content_container'>
                     <p>Explore our</p>
                     <h1>PREMIUM NFT GALLERY</h1>
-                    <OwlCarousel
-                        className='owl-theme'
-                        loop={true}
-                        margin={20}
-                        nav={true}
-                        responsiveClass={true}
-                        responsive={{
-                            0: {
-                                items: 1,
-                                nav: true,
-                            },
-                            600: {
-                                items: 3,
-                                nav: false,
-                            },
-                            1000: {
-                                items: 5,
-                                nav: true,
-                                loop: false,
-                            },
-                        }}
-                        dotClass={'hide'}>
-                        {galleryArray.map((el, index) => (
-                            <div className='gallery_card' key={index}>
-                                <img src={el.image} alt='' />
-                                <div className='title'>{el.title}</div>
-                            </div>
-                        ))}
-                    </OwlCarousel>
+                    <div className='carousel_main_wrap flex_wrap'>
+                        <OwlCarousel
+                            className='owl-theme'
+                            loop={true}
+                            margin={20}
+                            nav={true}
+                            responsiveClass={true}
+                            responsive={{
+                                0: {
+                                    items: 1,
+                                    nav: true,
+                                },
+                                600: {
+                                    items: 3,
+                                    nav: false,
+                                },
+                                1000: {
+                                    items: 5,
+                                    nav: true,
+                                    loop: false,
+                                },
+                            }}
+                            dotClass={'hide'}>
+                            {galleryArray.map((el, index) => (
+                                <div className='gallery_card' key={index}>
+                                    <img src={el.image} alt='' />
+                                    <div className='title'>{el.title}</div>
+                                </div>
+                            ))}
+                        </OwlCarousel>
+                    </div>
                     <a href='http://www.google.com' className='button'>
                         SHOP GALLERY
                     </a>

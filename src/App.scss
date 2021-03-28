@@ -373,6 +373,10 @@ $header_height: 50px;
             font-weight: 600;
         }
 
+        .owl-carousel {
+            max-width: calc(100% - 80px);
+        }
+
         .button {
             background-color: $dark_blue;
             color: #fff;
