@@ -374,7 +374,7 @@ $header_height: 50px;
         }
 
         .owl-carousel {
-            max-width: calc(100% - 80px);
+            max-width: calc(100% - 100px);
         }
 
         .button {
@@ -503,11 +503,11 @@ $header_height: 50px;
         }
 
         .gallery {
-            .owl-stage-outer {
-                padding: 10px 0;
-                margin: 0;
-                width: 100%;
-            }
+            // .owl-stage-outer {
+            //     padding: 10px 0;
+            //     margin: 0;
+            //     width: 100%;
+            // }
         }
 
         footer {
