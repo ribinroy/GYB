@@ -24,6 +24,10 @@ $header_height: 50px;
         width: 100%;
     }
 
+    .sm_only {
+        display: none !important;
+    }
+
     .content_container {
         max-width: 1300px;
         margin-left: 50%;
@@ -632,6 +636,12 @@ $header_height: 50px;
 
 @media only screen and (max-width: $breakpoint-xs) {
     .main_app {
+        .md_only {
+            display: none !important;
+        }
+        .sm_only {
+            display: block !important;
+        }
         header {
             padding: 10px 10px;
             .buttons_wrap {
@@ -642,6 +652,7 @@ $header_height: 50px;
             }
         }
         .hero_message {
+            text-align: center;
             .main_header {
                 text-align: center;
                 line-height: 1;
@@ -662,6 +673,10 @@ $header_height: 50px;
 
         .trust_box {
             text-align: center;
+
+            .text_wrap {
+                padding-right: 0px;
+            }
             .communities_wrap {
                 .item {
                     min-width: 100%;
@@ -699,9 +714,10 @@ $header_height: 50px;
                 .partner {
                     margin: 0;
                     margin-bottom: 40px;
+                    width: 40%;
 
                     img {
-                        max-width: 50%;
+                        // max-width: min(60%, 110px);
                     }
                 }
             }
@@ -714,6 +730,10 @@ $header_height: 50px;
                 p {
                     max-width: 100%;
                 }
+            }
+
+            .copyright {
+                margin-top: 40px;
             }
             .links_wrap {
                 align-items: center;

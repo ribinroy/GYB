@@ -392,7 +392,7 @@ function App() {
                                 announcements, educational resources, rare
                                 collection opportunities and more.
                             </p>
-                            <div className='copyright'>
+                            <div className='copyright md_only'>
                                 @2021 GrowYourBase, LLC. All rights reserved.
                                 Terms of Use. Privacy Policy.
                             </div>
@@ -433,6 +433,10 @@ function App() {
                                 className='link_item'>
                                 Contact Us
                             </a>
+                            <div className='copyright sm_only'>
+                                @2021 GrowYourBase, LLC. All rights reserved.
+                                Terms of Use. Privacy Policy.
+                            </div>
                         </div>
                     </div>
                 </div>
