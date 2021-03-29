@@ -49,8 +49,8 @@ const partners = [
         image: b20,
     },
     {
-        title: 'gala.games',
-        image: gala,
+        title: 'sandbox.game',
+        image: sandbox,
     },
     {
         title: 'niftygateway.com',
@@ -93,12 +93,32 @@ const partners = [
         image: flamingodao,
     },
     {
-        title: 'sandbox.game',
-        image: sandbox,
+        title: 'gala.games',
+        image: gala,
     },
 ];
 
 const galleryArray = [
+    {
+        title: "Salvador Satoshi - Heaven's Fall GhostMarket",
+        image: gal1,
+    },
+    {
+        title: 'Magusz: Shattered Ghost Market',
+        image: gal2,
+    },
+    {
+        title: 'Magusz: Neon Eye Skull Ghost Market',
+        image: gal3,
+    },
+    {
+        title: 'Rotating Cubes Paul Petersen',
+        image: gal4,
+    },
+    {
+        title: 'Dancing Gold in the Vault Paul Petersen',
+        image: gal5,
+    },
     {
         title: "Salvador Satoshi - Heaven's Fall GhostMarket",
         image: gal1,
@@ -189,7 +209,7 @@ function App() {
                                 <Twitter />
                                 FOLLOW ON TWITTER
                             </div>
-                            <div className='item'>
+                            <div className='item gyb'>
                                 <GYBT />
                                 GET AN ACCESS PASS
                             </div>
@@ -207,20 +227,21 @@ function App() {
                         <strong>EXPLORE, ENGAGE</strong> and{' '}
                         <strong>INVEST.</strong>
                     </div>
-                    <iframe
-                        className='youtube_wrap'
-                        src='https://www.youtube.com/embed/9xwazD5SyVg'
-                        title='YouTube video player'
-                        frameBorder='0'
-                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
-
+                    <div className='youtube_wrap'>
+                        <iframe
+                            className='inherit'
+                            src='https://www.youtube.com/embed/9xwazD5SyVg'
+                            title='YouTube video player'
+                            frameBorder='0'
+                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'></iframe>
+                    </div>
                     <div className='contents_wrap'>
                         <div className='content'>
                             <h1>Newbie-Friendly</h1>
                             <p>
                                 No experience? No problem. Get information and
-                                support in the free GYB community, or a full
-                                concierge service with a paid plan.
+                                support in our GYB community or full concierge
+                                service with a paid plan.
                             </p>
                         </div>
                         <div className='content'>
@@ -236,7 +257,7 @@ function App() {
                             <h1>Curated Opportunities</h1>
                             <p>
                                 All paid memberships receive monthly
-                                disbursments of premium NFTs. No more wondering
+                                distributions of premium NFTs. No more wondering
                                 how to find the best deals and how to get in on
                                 them.
                             </p>
@@ -249,10 +270,15 @@ function App() {
                     <h1>Our World-Class Creators and Partners</h1>
                     <div className='flex_wrap partners_items_wrap dont_adjust_sm'>
                         {partners.map((el, index) => (
-                            <div className='partner' key={index}>
+                            <a
+                                href={'//' + el.title}
+                                target='_blank'
+                                className='partner'
+                                rel='noreferrer'
+                                key={index}>
                                 <img src={el.image} alt={el.title} />
                                 {el.title}
-                            </div>
+                            </a>
                         ))}
 
                         <div className='partner you' key={'you'}>
@@ -269,6 +295,7 @@ function App() {
                     <div className='carousel_main_wrap flex_wrap'>
                         <OwlCarousel
                             className='owl-theme'
+                            rewind={true}
                             loop={true}
                             margin={20}
                             nav={true}
@@ -331,27 +358,37 @@ function App() {
                             <a
                                 href='http://www.google.com'
                                 className='link_item'>
-                                ABOUT
+                                About Us
                             </a>
                             <a
                                 href='http://www.google.com'
                                 className='link_item'>
-                                USER FAQ
+                                Creators Program
                             </a>
                             <a
                                 href='http://www.google.com'
                                 className='link_item'>
-                                NFT CREATOR FAQ
+                                Hunters Program
                             </a>
                             <a
                                 href='http://www.google.com'
                                 className='link_item'>
-                                CREATORS
+                                Member FAQ
                             </a>
                             <a
                                 href='http://www.google.com'
                                 className='link_item'>
-                                CONTACT US
+                                Creator FAQ
+                            </a>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
+                                Blog
+                            </a>
+                            <a
+                                href='http://www.google.com'
+                                className='link_item'>
+                                Contact Us
                             </a>
                         </div>
                     </div>

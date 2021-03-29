@@ -135,7 +135,7 @@ $header_height: 50px;
             width: 100%;
             height: 100%;
             position: absolute;
-            background-color: $dark_blue;
+            background-color: #000;
             z-index: 1;
             opacity: 0.3;
         }
@@ -154,10 +154,10 @@ $header_height: 50px;
             opacity: 0.3;
         }
         .main_header {
-            font-size: 80px;
+            font-size: 100px;
             @include font2();
-            font-weight: 500;
-            background: linear-gradient(116deg, #3ccbcf, #ff9300);
+            font-weight: 700;
+            background: linear-gradient(116deg, #3ccbcf -8%, #ff9300);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             // linear-gradient(45deg, #3ccbcf, #ff9300)
@@ -236,6 +236,7 @@ $header_height: 50px;
 
         .text_wrap {
             width: 50%;
+            padding-right: 30px;
         }
         .communities_wrap {
             @include flex-row();
@@ -255,6 +256,12 @@ $header_height: 50px;
                 font-weight: 600;
                 transition: background 0.4s;
 
+                &.gyb {
+                    svg {
+                        width: 140px;
+                        // height: 90px;
+                    }
+                }
                 &:hover {
                     background-color: #fff;
                 }
@@ -283,7 +290,7 @@ $header_height: 50px;
     }
 
     .benefits {
-        padding: 30px 0;
+        padding: 45px 0;
         color: $dark_blue;
 
         .heading {
@@ -301,11 +308,32 @@ $header_height: 50px;
         .youtube_wrap {
             width: 100%;
             min-height: 600px;
+            position: relative;
+
+            iframe {
+                min-height: 100%;
+                min-height: 600px;
+                z-index: 2;
+                position: relative;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: -60px;
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-image: url('./assets/Images/Shadow.png');
+                z-index: 1;
+            }
         }
 
         .contents_wrap {
             @include flex-row();
             text-align: center;
+            align-items: flex-start;
 
             .content {
                 margin: 10px;
@@ -325,8 +353,9 @@ $header_height: 50px;
     }
 
     .partners {
-        padding: 30px 0;
+        padding: 45px 0;
         background-color: $dark_blue;
+        text-decoration: none !important;
 
         .partners_items_wrap {
             flex-wrap: wrap;
@@ -336,6 +365,7 @@ $header_height: 50px;
                 color: #fff;
                 margin: 0 30px;
                 margin-bottom: 40px;
+                text-decoration: none !important;
 
                 &.you {
                     color: $orange;
@@ -359,7 +389,7 @@ $header_height: 50px;
 
     .gallery {
         background-color: $light_blue;
-        padding: 30px 0;
+        padding: 45px 0;
         text-align: center;
         color: $dark_blue;
 
@@ -378,6 +408,10 @@ $header_height: 50px;
             max-width: calc(100% - 100px);
         }
 
+        .owl-theme .owl-nav .disabled {
+            opacity: 1 !important;
+        }
+
         .button {
             background-color: $dark_blue;
             color: #fff;
@@ -387,6 +421,12 @@ $header_height: 50px;
             float: left;
             margin-left: 50%;
             transform: translate(-50%);
+            transition: all 0.4s;
+
+            &:hover {
+                background-color: $orange;
+                color: $dark_blue;
+            }
         }
 
         .owl-stage-outer {
@@ -395,13 +435,23 @@ $header_height: 50px;
             margin-left: -10px;
         }
 
-        .owl-nav.disabled {
+        .owl-nav.disabled,
+        .owl-nav {
             display: flex !important;
             justify-content: space-between;
             margin-left: -50px;
             width: calc(100% + 100px);
             position: absolute;
             top: calc(50% - 10px);
+
+            &:hover {
+                .owl-prev {
+                    background: url('./assets/Images/previous.png');
+                }
+                .owl-next {
+                    background: url('./assets/Images/next.png');
+                }
+            }
 
             button {
                 width: 30px;
@@ -440,7 +490,7 @@ $header_height: 50px;
     }
 
     .social {
-        padding: 30px 0;
+        padding: 45px 0;
         border-top: 4px solid #fff;
         border-bottom: 4px solid #fff;
         background-color: $orange;
@@ -454,7 +504,7 @@ $header_height: 50px;
 
     footer {
         background-color: $dark_blue;
-        padding: 30px 0;
+        padding: 45px 0;
         color: #fff;
 
         .details,
@@ -497,6 +547,7 @@ $header_height: 50px;
         }
 
         .trust_box {
+            padding-right: 0;
             .text_wrap,
             .communities_wrap {
                 width: 100%;
@@ -574,6 +625,10 @@ $header_height: 50px;
             .youtube_wrap {
                 width: 100%;
                 min-height: 300px;
+
+                iframe {
+                    min-height: 300px;
+                }
             }
 
             .contents_wrap {
