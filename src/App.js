@@ -9,12 +9,14 @@ import heroBG from './assets/Images/BG.jpg';
 import beeple from './assets/Images/Beeple.jpg';
 import B20Logo from './assets/Images/B20Logo.jpg';
 
+//Gallery
 import gal1 from './assets/Images/Gallery/1.jpg';
 import gal2 from './assets/Images/Gallery/2.jpg';
 import gal3 from './assets/Images/Gallery/3.jpg';
 import gal4 from './assets/Images/Gallery/4.jpg';
 import gal5 from './assets/Images/Gallery/5.jpg';
 
+//Partner
 import metapurse from './assets/Images/Partners/Metapurse.jpg';
 import b20 from './assets/Images/Partners/B20.jpg';
 import gala from './assets/Images/Partners/gala.jpg';
@@ -29,7 +31,7 @@ import avastars from './assets/Images/Partners/Avastars.jpg';
 import fenwick from './assets/Images/Partners/Fenwick.jpg';
 import flamingodao from './assets/Images/Partners/flamingodao.jpg';
 import sandbox from './assets/Images/Partners/Sandbox.jpg';
-import you from './assets/Images/Partners/you.jpg';
+import blake from './assets/Images/Partners/blake.png';
 
 //logos
 import { ReactComponent as Logo } from './assets/Images/Logo.svg';
@@ -38,6 +40,13 @@ import { ReactComponent as Discord } from './assets/Images/Discord logo.svg';
 import { ReactComponent as Twitter } from './assets/Images/Twitter.svg';
 import { ReactComponent as GYB } from './assets/Images/GYB.svg';
 import { ReactComponent as GYBT } from './assets/Images/GYB T.svg';
+
+//social icons
+import { ReactComponent as TwitterSocial } from './assets/Images/SocialIcons/Twitter.svg';
+import { ReactComponent as DiscordSocial } from './assets/Images/SocialIcons/Discord.svg';
+import { ReactComponent as InstagramSocial } from './assets/Images/SocialIcons/Instagram.svg';
+import { ReactComponent as MediumSocial } from './assets/Images/SocialIcons/Medium.svg';
+import { ReactComponent as YouTubeSocial } from './assets/Images/SocialIcons/YouTube.svg';
 
 const partners = [
     {
@@ -95,6 +104,10 @@ const partners = [
     {
         title: 'gala.games',
         image: gala,
+    },
+    {
+        title: 'blake.art',
+        image: blake,
     },
 ];
 
@@ -281,10 +294,10 @@ function App() {
                             </a>
                         ))}
 
-                        <div className='partner you' key={'you'}>
+                        {/* <div className='partner you' key={'you'}>
                             <img src={you} alt={'You'} />
                             <span>YOU!</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
@@ -331,8 +344,23 @@ function App() {
             </section>
             <section className='social'>
                 <div className='content_container'>
-                    <div className='flex_wrap'>
+                    <div className='flex_wrap dont_adjust_sm'>
                         <p>JOIN THE CONVERSATION</p>
+                        <a href='www.google.com'>
+                            <TwitterSocial className='social_icon' />
+                        </a>
+                        <a href='www.google.com'>
+                            <DiscordSocial className='social_icon' />
+                        </a>
+                        <a href='www.google.com'>
+                            <YouTubeSocial className='social_icon' />
+                        </a>
+                        <a href='www.google.com'>
+                            <MediumSocial className='social_icon' />
+                        </a>
+                        <a href='www.google.com'>
+                            <InstagramSocial className='social_icon' />
+                        </a>
                     </div>
                 </div>
             </section>

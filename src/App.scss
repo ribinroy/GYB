@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import './variables.scss';
+@import './colors.scss';
 
-$light_blue: #3ccbcf;
-$orange: #ff9300;
-$dark_blue: #00123b;
 $header_height: 50px;
 
 // font-family: 'Lato', sans-serif;
@@ -102,7 +100,7 @@ $header_height: 50px;
         button {
             transition: color 0.4s;
             border-radius: 8px;
-            border-color: $light_blue !important;
+            border-color: $light-blue !important;
             border-width: 2px;
             background-color: transparent;
             color: #fff;
@@ -114,16 +112,16 @@ $header_height: 50px;
             min-width: 100px;
             transition: all 0.4s;
             cursor: pointer;
-            background-color: $dark_blue;
+            background-color: $dark-blue;
 
             &:hover {
-                background-color: $light_blue !important;
+                background-color: $light-blue !important;
             }
         }
     }
 
     .hero_message {
-        background-color: $dark_blue;
+        background-color: $dark-blue;
         padding-top: $header_height;
         color: #fff;
         height: calc(100vh - 90px);
@@ -170,16 +168,16 @@ $header_height: 50px;
         }
 
         .button {
-            border: 1px solid $light_blue;
+            border: 1px solid $light-blue;
             padding: 10px 50px;
             font-size: 22px;
-            color: $light_blue;
+            color: $light-blue;
             cursor: pointer;
             transition: all 0.4s;
 
             &:hover {
-                background-color: $light_blue;
-                color: $dark_blue;
+                background-color: $light-blue;
+                color: $dark-blue;
             }
         }
 
@@ -191,7 +189,7 @@ $header_height: 50px;
     }
 
     .boast_box {
-        background-color: $dark_blue;
+        background-color: $dark-blue;
         border-top: 15px solid #fff;
         color: #fff;
         padding: 40px 0;
@@ -215,7 +213,7 @@ $header_height: 50px;
             margin: 0;
         }
         a {
-            color: $orange;
+            color: $dark-yellow;
             text-decoration: none !important;
             clear: both;
             font-size: 22px;
@@ -225,13 +223,13 @@ $header_height: 50px;
     }
 
     .trust_box {
-        background-color: $light_blue;
+        background-color: $light-blue;
         padding: 40px 0;
         border-top: 15px solid #fff;
 
         h1,
         p {
-            color: $dark_blue;
+            color: $dark-blue;
         }
 
         .text_wrap {
@@ -291,7 +289,7 @@ $header_height: 50px;
 
     .benefits {
         padding: 45px 0;
-        color: $dark_blue;
+        color: $dark-blue;
 
         .heading {
             width: 100%;
@@ -341,7 +339,7 @@ $header_height: 50px;
                 h1 {
                     font-size: 35px;
                     font-weight: 600;
-                    color: $dark_blue;
+                    color: $dark-blue;
                 }
 
                 p {
@@ -354,7 +352,7 @@ $header_height: 50px;
 
     .partners {
         padding: 45px 0;
-        background-color: $dark_blue;
+        background-color: $dark-blue;
         text-decoration: none !important;
 
         .partners_items_wrap {
@@ -368,7 +366,7 @@ $header_height: 50px;
                 text-decoration: none !important;
 
                 &.you {
-                    color: $orange;
+                    color: $dark-yellow;
                     @include font2();
 
                     span {
@@ -378,23 +376,24 @@ $header_height: 50px;
                 img {
                     border-radius: 50%;
                     margin-bottom: 10px;
+                    max-width: 160px;
                 }
             }
         }
         h1 {
-            color: $orange;
+            color: $dark-yellow;
             text-align: center;
         }
     }
 
     .gallery {
-        background-color: $light_blue;
+        background-color: $light-blue;
         padding: 45px 0;
         text-align: center;
-        color: $dark_blue;
+        color: $dark-blue;
 
         h1 {
-            color: $dark_blue;
+            color: $dark-blue;
             font-weight: 600;
             margin: 0;
         }
@@ -413,7 +412,7 @@ $header_height: 50px;
         }
 
         .button {
-            background-color: $dark_blue;
+            background-color: $dark-blue;
             color: #fff;
             text-decoration: none !important;
             padding: 15px 40px;
@@ -424,8 +423,8 @@ $header_height: 50px;
             transition: all 0.4s;
 
             &:hover {
-                background-color: $orange;
-                color: $dark_blue;
+                background-color: $dark-yellow;
+                color: $dark-blue;
             }
         }
 
@@ -479,7 +478,7 @@ $header_height: 50px;
             padding: 15px;
 
             .title {
-                color: $dark_blue;
+                color: $dark-blue;
                 margin-top: 15px;
                 min-height: 38px;
             }
@@ -493,17 +492,25 @@ $header_height: 50px;
         padding: 45px 0;
         border-top: 4px solid #fff;
         border-bottom: 4px solid #fff;
-        background-color: $orange;
+        background-color: $dark-yellow;
 
         p {
             font-weight: 600;
             margin: 0;
             font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .social_icon {
+            width: 50px;
+            height: 50px;
+            // background-color: red;
+            margin: 0 15px;
         }
     }
 
     footer {
-        background-color: $dark_blue;
+        background-color: $dark-blue;
         padding: 45px 0;
         color: #fff;
 
@@ -536,6 +543,20 @@ $header_height: 50px;
             &:not(.dont_adjust_sm) {
                 flex-direction: column;
                 padding: 0 30px;
+            }
+        }
+
+        .social {
+            margin: 0;
+
+            .flex_wrap {
+                flex-wrap: wrap;
+
+                p {
+                    min-width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
             }
         }
 
