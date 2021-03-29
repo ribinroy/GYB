@@ -64,8 +64,8 @@ $header_height: 50px;
     h1 {
         color: #fff;
         @include font2();
-        font-size: 40px;
         font-weight: 500;
+        font-size: 47px;
     }
 
     .no_margin {
@@ -165,6 +165,8 @@ $header_height: 50px;
             margin: 0;
             margin-bottom: 25px;
             margin-top: -15px;
+            font-size: 26px;
+            margin: -20px 0 31px;
         }
 
         .button {
@@ -194,6 +196,7 @@ $header_height: 50px;
         color: #fff;
         padding: 40px 0;
         padding-top: 0;
+        padding-bottom: 60px;
 
         .flex_wrap {
             padding-top: 40px;
@@ -203,10 +206,11 @@ $header_height: 50px;
         }
 
         .logo {
-            margin-right: 40px;
+            margin-right: 70px;
         }
         p {
             opacity: 0.8;
+            line-height: 30px;
         }
 
         h1 {
@@ -219,6 +223,12 @@ $header_height: 50px;
             font-size: 22px;
             width: 100%;
             float: left;
+            line-height: 35px;
+            transition: color 0.4s;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 
@@ -226,15 +236,23 @@ $header_height: 50px;
         background-color: $light-blue;
         padding: 40px 0;
         border-top: 15px solid #fff;
+        padding-bottom: 60px;
 
         h1,
         p {
             color: $dark-blue;
         }
 
+        .flex_wrap {
+            align-items: flex-start;
+        }
+
+        h1 {
+            margin-top: 0px;
+        }
         .text_wrap {
             width: 50%;
-            padding-right: 30px;
+            padding-right: 60px;
         }
         .communities_wrap {
             @include flex-row();
@@ -334,7 +352,7 @@ $header_height: 50px;
             align-items: flex-start;
 
             .content {
-                margin: 10px;
+                margin: 30px;
 
                 h1 {
                     font-size: 35px;
@@ -351,9 +369,9 @@ $header_height: 50px;
     }
 
     .partners {
-        padding: 45px 0;
         background-color: $dark-blue;
         text-decoration: none !important;
+        padding: 15px 0 45px;
 
         .partners_items_wrap {
             flex-wrap: wrap;
@@ -388,19 +406,20 @@ $header_height: 50px;
 
     .gallery {
         background-color: $light-blue;
-        padding: 45px 0;
         text-align: center;
         color: $dark-blue;
+        padding: 60px 0px 60px;
 
         h1 {
             color: $dark-blue;
             font-weight: 600;
             margin: 0;
         }
-        p {
+        .sub_text {
             margin: 0;
             margin-bottom: -10px;
             font-weight: 600;
+            font-size: 28px;
         }
 
         .owl-carousel {
@@ -421,6 +440,8 @@ $header_height: 50px;
             margin-left: 50%;
             transform: translate(-50%);
             transition: all 0.4s;
+            font-size: 24px;
+            font-weight: 600;
 
             &:hover {
                 background-color: $dark-yellow;
@@ -472,7 +493,7 @@ $header_height: 50px;
         }
 
         .gallery_card {
-            background-color: #fff;
+            background-color: #f5f5f5;
             border-radius: 8px;
             box-shadow: 0px 0px 10px #333;
             padding: 15px;
@@ -497,26 +518,36 @@ $header_height: 50px;
         p {
             font-weight: 600;
             margin: 0;
-            font-size: 20px;
-            margin-right: 20px;
+            font-size: 26px;
+            margin: 0 20px 0 0;
         }
 
         .social_icon {
             width: 50px;
             height: 50px;
             // background-color: red;
-            margin: 0 15px;
+            margin: 0 20px;
         }
     }
 
     footer {
         background-color: $dark-blue;
-        padding: 45px 0;
+        padding: 70px 0px 60px;
         color: #fff;
 
         .details,
         .links_wrap {
             width: 50%;
+        }
+
+        .details {
+            p {
+                line-height: 30px;
+                max-width: 70%;
+            }
+            .copyright {
+                font-size: 14px;
+            }
         }
 
         .links_wrap {
@@ -529,10 +560,12 @@ $header_height: 50px;
                 color: #fff;
                 text-decoration: none !important;
                 margin-bottom: 10px;
+                transition: color 0.4s;
+
+                &:hover {
+                    color: $dark-yellow;
+                }
             }
-        }
-        .copyright {
-            font-size: 14px;
         }
     }
 }
@@ -677,6 +710,11 @@ $header_height: 50px;
         footer {
             text-align: center;
 
+            .details {
+                p {
+                    max-width: 100%;
+                }
+            }
             .links_wrap {
                 align-items: center;
             }

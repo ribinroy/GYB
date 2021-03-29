@@ -198,10 +198,10 @@ function App() {
                             <p>
                                 Discuss NFTs, and discover new opportunities in
                                 the GYB Discord community, where thousands of
-                                NFT enthusiasts gather daily. Visit the Swifty
-                                Nifty Lounge (our Cryptovoxels headquarters),
-                                follow us on Twitter, or get an Access Pass for
-                                exclusive deals.
+                                NFT enthusiasts gather daily. Visit the
+                                <i> Swifty Nifty Lounge</i> (our Cryptovoxels
+                                headquarters), follow us on Twitter, or get an
+                                Access Pass for exclusive deals.
                             </p>
                             <p>
                                 We specialize in distributing one-of-a-kind
@@ -303,7 +303,7 @@ function App() {
             </section>
             <section className='gallery'>
                 <div className='content_container'>
-                    <p>Explore our</p>
+                    <p className='sub_text'>Explore our</p>
                     <h1>PREMIUM NFT GALLERY</h1>
                     <div className='carousel_main_wrap flex_wrap'>
                         <OwlCarousel
@@ -346,19 +346,34 @@ function App() {
                 <div className='content_container'>
                     <div className='flex_wrap dont_adjust_sm'>
                         <p>JOIN THE CONVERSATION</p>
-                        <a href='www.google.com'>
+                        <a
+                            href='https://twitter.com/growyourbase_'
+                            target='_blank'
+                            rel='noreferrer'>
                             <TwitterSocial className='social_icon' />
                         </a>
-                        <a href='www.google.com'>
+                        <a
+                            href='https://discordapp.com/invite/CX98bBr'
+                            target='_blank'
+                            rel='noreferrer'>
                             <DiscordSocial className='social_icon' />
                         </a>
-                        <a href='www.google.com'>
+                        <a
+                            href='https://www.youtube.com/channel/UC7dR9fAwYDch2MXgB0Uhd6Q'
+                            target='_blank'
+                            rel='noreferrer'>
                             <YouTubeSocial className='social_icon' />
                         </a>
-                        <a href='www.google.com'>
+                        <a
+                            href='https://medium.com/growyourbase'
+                            target='_blank'
+                            rel='noreferrer'>
                             <MediumSocial className='social_icon' />
                         </a>
-                        <a href='www.google.com'>
+                        <a
+                            href='https://www.instagram.com/growyourbase/'
+                            target='_blank'
+                            rel='noreferrer'>
                             <InstagramSocial className='social_icon' />
                         </a>
                     </div>
